@@ -13,8 +13,6 @@ class Show < ActiveRecord::Base
   end
 end
 
-# lowest_rating: returns the lowest value in the ratings column.
-#
 # least_popular_show: returns the show with the lowest rating.
 #
 # ratings_sum: returns the sum of all of the ratings.
