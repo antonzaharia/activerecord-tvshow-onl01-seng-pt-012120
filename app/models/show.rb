@@ -16,6 +16,10 @@ class Show < ActiveRecord::Base
     rating = Show.lowest_rating
     Show.where(rating: lowest_rating).first
   end
+
+  def self.ratings_sum
+    Show.sum(:rating)
+  end
 end
 
 # least_popular_show: returns the show with the lowest rating.
