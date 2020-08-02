@@ -7,6 +7,9 @@ class Show < ActiveRecord::Base
     rating = Show.highest_rating
     Show.where(rating: rating).first
   end
+
+  def self.lowest_rating
+  end
 end
 
 # lowest_rating: returns the lowest value in the ratings column.
